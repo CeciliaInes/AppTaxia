@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,20 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Este es el el splash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emr-gY-B2O">
-                                <rect key="frame" x="114" y="434" width="186" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic.logo" translatesAutoresizingMaskIntoConstraints="NO" id="azQ-Gf-Vt4">
+                                <rect key="frame" x="128.5" y="380" width="157" height="136"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yi-PQ-KjZ">
+                                <rect key="frame" x="146.5" y="645" width="121" height="54"/>
+                                <string key="text">Por: Bryan MagallanesCecilia castañeda</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.59237361549102241" green="1" blue="0.63421092992377071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="emr-gY-B2O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="Je2-Nv-bZj"/>
-                            <constraint firstItem="emr-gY-B2O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="390" id="Qs1-Kx-RaD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="emr-gY-B2O" secondAttribute="bottom" constant="400" id="SFd-wX-ahX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="emr-gY-B2O" secondAttribute="trailing" constant="114" id="pL7-iZ-si7"/>
+                            <constraint firstItem="9yi-PQ-KjZ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.5" id="B5n-wG-kVg"/>
+                            <constraint firstItem="azQ-Gf-Vt4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Nnb-xG-jst"/>
+                            <constraint firstItem="azQ-Gf-Vt4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nT6-xa-2l8"/>
+                            <constraint firstItem="9yi-PQ-KjZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rdX-iW-zHW"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,4 +42,10 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic.logo" width="157.33332824707031" height="136"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
